@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gala sa Pinas Booking System</title>
+    <link rel="stylesheet" href="book-now-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>   
+<body>
+    <div class="container">
+        <div class="header">
+          <div class="logo">
+            <img src="images/Logo.png" width="300">
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="container-form">
+        <form action="index.html">
+            <h2 class="heading heading-yellow">Reservation Online</h2>
+            <div class="form-field">
+                <p>Name:</p>
+                <input type="text" required>
+            </div>
+            <div class="form-field">
+                <p>Email:</p>
+                <input type="email" required>
+            </div>
+            <div class="form-field">
+                <p>Destination:</p>
+                <select name="select" id="#">
+                    <option value="1">Boracay</option>
+                    <option value="2">El Nido Beach</option>
+                    <option value="3">Alona Beach</option>
+                    <option value="4">Coron</option>
+                    <option value="5">Naked Island</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <p>Date:</p>
+                <input type="date" required>
+            </div>
+            <div class="form-field">
+                <p>Time:</p>
+                <input type="time" required>
+            </div>
+            <div class="form-field">
+                <p>How many people:</p>
+                <select name="select" id="#">
+                    <option value="1">1 person</option>
+                    <option value="2">2 persons</option>
+                    <option value="3">3 persons</option>
+                    <option value="4">4 persons</option>
+                    <option value="5">5 persons</option>
+                    <option value="5+">5+ persons</option>
+                </select>
+            </div>
+            <button class="button-submit" type="submit">Submit</button>
+            <button class="button-cancel" type="reset">Cancel</button>
+        </form>
+        <button onclick="window.location.href='index.html';" class="button-exit"><a href="index.html">Exit</a></button>
+    </div>
+</body> 
+</html>

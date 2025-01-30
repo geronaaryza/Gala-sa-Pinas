@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"/>
+    
+    <title>Gala sa Pinas Gallery</title>
+    <link rel="stylesheet" href="gallery.css" />
+    
+  </head>
+  <body>
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <img src="images/Logo.png" width="300">
+          </div>
+          <ul>
+            <li data-aos="face-down" data-aos-duration="800"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="book-now.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div
+          class="banner"
+          style="background-image: url('images/boracay/bora.jpg')"
+        >
+        <div class="glass-wrapper"></div>
+        </div>
+        <div class="tourist-list">
+          <ul class="place-list">
+            <li class="active"
+            data-img = "images/boracay/bora.jpg">
+              <div 
+                class="thumbnail"
+                style="background-image: url('images/boracay/bora.jpg');"
+              >
+              <div class="details">
+                <p class="province">Aklan</p>
+                <p class="place-name">Boracay</p>
+              </div>
+            </div>
+            </li>
+            <li data-img = "images/el-nido/El-Nido-Palawan.jpg">
+              <div 
+                class="thumbnail"
+                style="background-image: url('images/el-nido/El-Nido-Palawan.jpg');"
+              >
+              <div class="details">
+                <p class="province">Palawan</p>
+                <p class="place-name">El Nido Beach</p>
+              </div>
+            </div>
+            </li>
+            <li data-img = "images/alona/Alona.jpg">
+              <div 
+                class="thumbnail"
+                style="background-image: url('images/alona/Alona.jpg');"
+              >
+              <div class="details">
+                <p class="province">Bohol</p>
+                <p class="place-name">Alona Beach</p>
+              </div>
+            </div>
+            </li>
+            <li data-img = "images/coron/Coron.jpg">
+              <div 
+                class="thumbnail"
+                style="background-image: url('images/coron/Coron.jpg');"
+              >
+              <div class="details">
+                <p class="province">Palawan</p>
+                <p class="place-name">Coron</p>
+              </div>
+            </div>
+            </li>
+            <li data-img = "images/naked/naked-island.jpg">
+              <div 
+                class="thumbnail"
+                style="background-image: url('images/naked/naked-island.jpg');"
+              >
+              <div class="details">
+                <p class="province">Siargao</p>
+                <p class="place-name">Naked Island</p>
+              </div>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </body>
+  <script>
+    let places = document.querySelectorAll('.place-list li')
+    let active = "/images/boracay/bora.jpg";
+    
+    places.forEach((e) => {
+      e.addEventListener("mouseenter", (event) => {
+        places.forEach((e) => {
+          e.classList.remove("active");
+        });
+
+        event.target.classList.add("active");
+        active = event.target.getAttribute("data-img");
+        let banner = document.querySelector(".banner");
+        banner.style.backgroundImage = `url('${active}')`;
+      });
+    });
+  </script>
+</html>

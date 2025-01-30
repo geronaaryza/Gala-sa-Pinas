@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", 'Merriweather', sans-serif;
+}
+
+.header {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px;
+    align-items: center;
+    color:#fff;
+}
+
+.logo {
+   margin-left: 5rem;
+}
+
+ul {
+    margin-right: -18rem;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+}
+
+.header a {
+    font-family: 'Merriweather', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header a:hover {
+    color: #000000;
+}
+
+.banner {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: 2s ease;
+}
+
+.banner .glass-wrapper {
+    width: 30%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.tourist-list {
+    bottom: 25px;
+    position: absolute;
+    left: 5rem;
+  }
+
+  .tourist-list p {
+    color: #fff;
+    padding-left: 20px;
+    margin-bottom: auto;
+    line-height: 24px;
+  }
+
+  .tourist-list ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 65vw;
+    height: 14rem;
+    align-items: center;
+  }
+
+  .tourist-list .thumbnail {
+    display: flex;
+    height: 10rem;
+    width: 18rem;
+    background-size: cover !important;
+    border-radius: 8px;
+    flex-direction: column;
+  }
+
+  .tourist-list .thumbnail .details {
+    margin-top: auto;
+    padding: 10px 0px;
+    background: rgba(38, 38, 38, 0.05);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  .details .place-name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .details .province {
+    font-weight: 300;
+  }
+
+  .tourist-list .active {
+    margin-top: -5rem;
+  }
